@@ -30,9 +30,9 @@ class LinTask
 
     /**
      * @param string $method 方法名
-     * @param string|array $args 参数
+     * @param array $args 参数
      * @throws \app\lib\exception\push\SwooleException
-     * @return object
+     * @return string $class 类的路径
      */
     public static function getClass($method, &$args)
     {
@@ -40,17 +40,17 @@ class LinTask
         if (class_exists($class) && method_exists($class, $method)) {
             $args = $args[0] ?? [];
         } else {
-            if (is_array($args) && isset($args[0]) && !empty($args[0])) {
+            if (count($args)>0 && is_string($args[0]) && !empty($args[0])) {
                 if (!class_exists($args[0])) {
-                    throw new SwooleException(['code'=>400, 'message'=>'自定义类不存在：'.$args[0], 'error_code'=>50004]);
+                    throw new SwooleException(['code'=>400, 'msg'=>'自定义类不存在：'.$args[0], 'error_code'=>50004]);
                 } else if (!method_exists($args[0], $method)) {
-                    throw new SwooleException(['code'=>400, 'message'=>'自定义方法不存在：'.$method, 'error_code'=>50005]);
+                    throw new SwooleException(['code'=>400, 'msg'=>'自定义方法不存在：'.$method, 'error_code'=>50005]);
                 } else {
                     $class = $args[0];
                     $args = $args[1] ?? [];
                 }
             } else {
-                throw new SwooleException(['code'=>400, 'message'=>'参数错误', 'error_code'=>50003]);
+                throw new SwooleException(['code'=>400, 'msg'=>'请传入正确的类路径', 'error_code'=>50003]);
             }
         }
         return $class;
