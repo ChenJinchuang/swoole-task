@@ -18,7 +18,6 @@ class LinTask
 {
     public static function __callStatic($method, $args)
     {
-        var_dump($method, $args);die;
         $class = self::getClass($method, $args);
         $data = [
             'class' => $class,
