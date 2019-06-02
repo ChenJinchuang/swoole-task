@@ -25,7 +25,7 @@ class Push extends Controller
     {
         $data = $request -> post();
         //进行发送数据
-        LinTask::email($data);
+        LinTask::sendEmail($data['to'], $data['title'], $data['content']);
         //发送成功
         return writeJson(201,'','ok',0);
     }

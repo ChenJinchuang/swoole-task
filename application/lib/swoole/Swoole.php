@@ -34,7 +34,7 @@ class Swoole extends Server
         $data = json_decode($data,true);
         $class = $data['class'];
         $method = $data['method'];
-        $flag = (new $class())->$method($data['data']);
+        $flag = (new $class())->$method(...$data['data']);
         return $flag;
     }
     public function onFinish($server, $task_id, $data)
