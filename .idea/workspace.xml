@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31f5982b-d6e7-4ed5-bcf7-303d24758e26" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/swoole-task.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/lib/task/LinTask.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/lib/task/Template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/lib/task/template/Email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/lib/task/template/Wechat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/controller/cms/Push.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/cms/Push.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/async/Task.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/lib/swoole/LinTask.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/lib/swoole/Pclient.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/lib/swoole/Swoole.php" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Email.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Email.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/lib/task/template/Email.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
@@ -35,6 +24,15 @@
               <folding>
                 <element signature="e#117#143#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -129,38 +127,6 @@
               <item name="swoole-task" type="b2602c69:ProjectViewProjectNode" />
               <item name="swoole-task" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="swoole-task" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swoole-task" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swoole-task" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swoole-task" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swoole-task" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swoole-task" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swoole-task" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swoole-task" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swoole-task" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swoole-task" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -173,6 +139,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git\swoole-task" />
       <recent name="E:\git\swoole-task\application\lib" />
     </key>
   </component>
@@ -199,12 +166,12 @@
       <option name="presentableId" value="Default" />
       <updated>1560262214614</updated>
       <workItem from="1560262216451" duration="345000" />
-      <workItem from="1560262575059" duration="164000" />
+      <workItem from="1560262575059" duration="258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="509000" />
+    <option name="totallyTimeSpent" value="603000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -217,9 +184,9 @@
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32967892" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32967892" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32967892" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32889584" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -268,6 +235,13 @@
           <folding>
             <element signature="e#117#143#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
         </state>
       </provider>
     </entry>
